@@ -1,0 +1,2 @@
+#!/bin/bash
+chmom -R ugo+x
