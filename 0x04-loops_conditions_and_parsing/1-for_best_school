@@ -1,2 +1,6 @@
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPw+CqeaDYtHMfjSZQz3zflXDqU7kX4qD7sf1bXrovQsw8WkBz0T70ymN4U3G40TZ8k5zZ1hsejpcF8pDbKby/mkHkhB1RQiJsgOo2fEH+e6VPbhqckoIac9XN74xaMNQSj+KDDOvIQhiJQ6D1kAR8cKkhUj/sm9z53InEDlf9B6mlhD+zRc4ZX1br/8rPpAfrB2IkOLk/SveaQ8vdy6rarXaIxqSK3lrDiuHGztmVEL4KJtEHP0D56NSzsapVQYMFB5gE33j2Reji7kNkp88s7QHL1hKHJguveUx37CwNiivwCEkbe4MXqeTsLMPTSV1meR4wkarMc34bi4Y+6CbR kayode@DESKTOP-LPHL07F
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
 
+for ((i=0; i<10; i++))
+do
+	echo "Best School"
