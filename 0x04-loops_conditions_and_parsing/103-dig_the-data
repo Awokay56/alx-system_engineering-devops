@@ -1,11 +1,8 @@
-#!/usr/bin/env bash
+#!/user/bin/env bash
+# Parses Apache log files in list format.
+#  Groups visitors by IP and HTTP status code.
+#  Displays the number of occurrences, IP, and HTTP status
+#+ code of each log, in sorted order.
 
-# Check if the log file exists
-if [ ! -f "apache-access.log" ]; then
-    echo "Error: Apache log file 'apache-access.log' not found!"
-    exit 1
-fi
+awk '{print $1 " " $9}' apache-access.log | sort| uniq -c | sort -rn
 
-# Parse Apache log file, group visitors by IP and HTTP status code,
-# and display the number of occurrences along with IP and HTTP status code in sorted order.
-awk '{print $1 " " $9}' apache-access.log | sort | uniq -c | sort -rn
