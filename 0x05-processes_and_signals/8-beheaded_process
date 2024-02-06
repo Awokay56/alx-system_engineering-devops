@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
 # Kills the process 7-highlander
 
- pkill -f 7-highlander
+echo "Starting script"
+
+pkill -f 7-highlander
+
+echo "Script finished"
