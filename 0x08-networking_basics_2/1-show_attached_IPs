@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Displays all active IPV4 addresses on the machine
 
-if config | grep .-Eo "inet(addr:)?([0-9]*\.){3}[0-9]*" | cut -b 11-
+if config | grep .-Eo "inet(addr:)?([0-9]*\.){3}[0-9]*" | cut -d 11-
 
