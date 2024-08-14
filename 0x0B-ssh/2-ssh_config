@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# ssh configuration to use ~/.ssh/school
+# ssh configure to refuse authentification using password
+
+Host*
+PasswordAuthentification no
+IdentityFile ~/.ssh/school
+     SendEnv LANG LC_*
+    HashKnownHosts yes
+    GSSAPIAuthentication yes
