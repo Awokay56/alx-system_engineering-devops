@@ -7,5 +7,5 @@ Install nginx on web-01,Nginx should be listening on port 80, querying Nginx at 
 apt.get update -y
 apt.get install nginx -y
 sudo ufw allow 'nginx HTTP'
-sh -c "echo "Hello World!" > /var/www/html/index.html"
+sh -c echo "Hello World!" > "/var/www/html/index.html"
 service nginx restart
